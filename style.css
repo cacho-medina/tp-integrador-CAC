@@ -1,0 +1,79 @@
+.comprar_ticket {
+    color: green !important;
+    transition: all 0.4s ease;
+    &:hover {
+        color: rgb(4, 202, 4) !important;
+    }
+}
+#conferencia {
+    min-height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(./img/ba1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+@media screen and (min-width: 768px) {
+    .conferencia_desc {
+        position: relative;
+        right: 0;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .conferencia {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        top: 100px;
+    }
+}
+
+.tarjeta {
+    width: 300px;
+}
+.img {
+    height: auto;
+    max-width: 100%;
+}
+@media (min-width: 768px) and (max-width: 894px) {
+    .img {
+        height: 100%;
+    }
+}
+.desc {
+    font-size: 0.9rem;
+}
+@media screen and (min-width: 1000px) {
+    .container_max-width {
+        max-width: 60vw;
+    }
+}
+.orador_desc {
+    font-size: small;
+}
+.dotted {
+    text-decoration: underline dotted;
+}
+.smaller {
+    font-size: 0.8rem;
+}
+footer li {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.4s ease;
+    &:hover {
+        color: rgb(0, 81, 255);
+    }
+}
+.footer {
+    background: blue;
+    background: linear-gradient(
+        90deg,
+        rgba(37, 54, 88, 1) 0%,
+        rgba(74, 153, 166, 1) 100%
+    );
+}
