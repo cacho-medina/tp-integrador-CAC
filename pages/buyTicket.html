@@ -205,7 +205,7 @@
                             <div
                                 class="col-12 py-3 text-info-emphasis bg-info-subtle border border-primary rounded"
                             >
-                                <p class="m-0">Total a pagar: $</p>
+                                <p class="m-0" id="precio">Total a pagar: $</p>
                             </div>
                         </div>
                         <div class="row">
@@ -213,14 +213,16 @@
                                 class="col-12 d-flex flex-column gap-2 flex-sm-row"
                             >
                                 <button
+                                    type="button"
                                     class="btn btn-success w-100 py-2 fw-medium"
-                                    onclick=""
+                                    onclick="borrarTicket()"
                                 >
                                     Borrar
                                 </button>
                                 <button
+                                    type="button"
                                     class="btn btn-success w-100 py-2 fw-medium"
-                                    onclick=""
+                                    onclick="crearTicket()"
                                 >
                                     Resumen
                                 </button>
@@ -254,5 +256,6 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"
         ></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>
